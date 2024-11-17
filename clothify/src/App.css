@@ -1,0 +1,92 @@
+#root {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+#root h1{
+  text-align: center;
+}
+
+.categoryDiv{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.categoryLayout{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   /* max-width: 650px; */
+}
+
+.categoryLayout:first-child{
+  display: flex;
+  flex-direction: row; 
+}
+
+.categoryLayout:nth-child(2){
+  flex-direction: column; 
+}
+
+.categoryImg{
+  display: flex;
+  flex-direction: column; 
+  border-radius: 100%;
+  padding: 20px 0px;
+  border: 0.5px rgb(224, 230, 213) solid;
+  height: 400px;
+}
+
+.reviewDiv{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  border: 0.5px rgb(224, 230, 213) solid;
+  /* margin: 20px */
+}
+
+.btn{
+  display:flex;
+  justify-content: center;
+}
+#addMyReview{
+   width: 180px;
+}
+
+.eachReviewSec {
+  border: 0.5px rgb(224, 230, 213) solid;
+  border-left: 0px;
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+}
+
+.eachReviewSec h3{
+  border-left: 0.5px rgb(224, 230, 213) solid;
+  border-right: 0px;
+  padding: 30px;
+  margin: 0px;
+}
