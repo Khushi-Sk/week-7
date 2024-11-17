@@ -9,7 +9,7 @@ export default function Reviews() {
 
     useEffect(() => {
         async function addReview() {
-            const response = await fetch(`http://localhost:8080/addReviews`, {
+            const response = await fetch(`https://week-7-6bzh.onrender.com/addReviews`, {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({ userId:7, comment: "my comment", productId: 1, rating: 4 } )

@@ -13,7 +13,7 @@ function App() {
   
   useEffect(() => {
       async function getCategories() {
-          const response = await fetch("http://localhost:8080/categories")
+          const response = await fetch("https://week-7-6bzh.onrender.com/categories")
           const data = await response.json()
           
           setCategories(data)

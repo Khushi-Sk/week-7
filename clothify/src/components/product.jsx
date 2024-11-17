@@ -27,7 +27,7 @@ export default function Product(){
     }
     useEffect(() => {
         async function getProduct() {
-            const response = await fetch(`http://localhost:8080/product?categoryId=${categoryId}`)
+            const response = await fetch(`https://week-7-6bzh.onrender.com/product?categoryId=${categoryId}`)
             const data = await response.json()
             setProduct(data)
         }    
@@ -36,7 +36,7 @@ export default function Product(){
 
     useEffect(() => {
     async function getReviews() {
-        const response = await fetch(`http://localhost:8080/getReviews`, {
+        const response = await fetch(`https://week-7-6bzh.onrender.com/getReviews`, {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({productId: product.id})
